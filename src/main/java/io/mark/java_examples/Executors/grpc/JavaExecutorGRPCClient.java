@@ -23,7 +23,7 @@ public class JavaExecutorGRPCClient
 					   ExecutionResponse response =
 							   stub.execute(request);
 
-					   System.out.println(response);
+					   System.out.println("Response from server:"+response);
 				   }catch (io.grpc.StatusRuntimeException e) {
 				   	System.out.println("Error occured. Status:"+e.getStatus().getCode()+" . Description:"+e.getStatus().getDescription());
 
